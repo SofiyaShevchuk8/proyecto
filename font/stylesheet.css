@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Black Delights';
+    src: url('BlackDelightsRegular.woff2') format('woff2'),
+        url('BlackDelightsRegular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

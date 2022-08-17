@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/estil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+
+</head>
+
+<header>
+
+</header>
+
+<body>
+
+    <div id="primeraPantalla" class="cajageneral">
+
+        <div class="cover" id="foo">
+            <div class="preload"></div>
+        </div>
+
+        <div class="header">
+
+
+            <img class="icono-header" src="img/icono.png">
+            <img class="icono-menu" src="img/menu-10.svg">
+
+        </div>
+
+
+
+
+
+        <div class="caja-logo">
+
+            <div class="relative">
+
+
+                <!--                <img id="mano-relative" src="img/mano.png">-->
+
+
+            </div>
+
+            <!--                        <a href="#link1" class="scrollLink logoportada"></a>-->
+            <a class="logoportada"></a>
+
+            <a href="#link1" class="scrollLink cajascroll"></a>
+
+        </div>
+
+
+        <div id="flecha" class="caja-flecha"><img class="flecha" src="img/flecha-11.svg"></div>
+
+        <!--
+        <a href="#link1" class="scrollLink cajascroll">
+            <div id="flecha" class="caja-flecha"><img class="flecha" src="img/flecha-11.svg"></div>
+        </a>
+-->
+
+        <div class="cajacuerpo">
+
+            <div id="link1"></div>
+
+
+            <div id="textDiv">
+                <p class="textocentrado">Habían una vez...</p>
+
+
+                <p class="subtitulo">Unas versiones de cuentos
+                    bellos de infancia que en realidad nunca lo fueron. </p>
+
+                <p class="subtitulo">Un mundo de fantasía de otra vida, donde las princesas no fueron felices, ni tampoco había magia que les salvara. </p>
+
+
+            </div>
+
+            <a href="#link2" class="scrollLink cajascroll"></a>
+
+
+        </div>
+
+        <div class="caja1">
+            <div class="caja-titulo">
+                <h2 id="blancanieves" class="titulo2">BLANCA NIEVES</h2>
+            </div>
+            <div class="caja-elementos">
+
+
+
+                <img id="link2" class="imghome" src="img/blancanieves.png">
+
+                <img id="pajaro" class="imgpajaro" src="img/pajaro3.png">
+
+            </div>
+
+            <div class="cuentohome">
+
+                <p class="subtitulo-parrafo">"Estaba parcialmente ciega debido a una viruela."</p>
+
+                <a id="primero" onclick="descubrir()" class="boton">DESCUBRIR MÁS</a>
+
+            </div>
+        </div>
+
+
+
+        <div class="caja1">
+
+
+            <div class="cuentohome">
+
+                <p class="subtitulo-parrafo">"Prueba cuentoZ"</p>
+
+                <a id="primero" onclick="blancanievesCuento()" class="boton">DESCUBRIR MÁS</a>
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="caja2">
+
+            <div class="caja-titulo">
+                <h2 id="cenicienta" class="titulo3">CENI CIENTA</h2>
+            </div>
+
+            <div class="caja-elementos2">
+
+
+
+                <img class="imghome2" src="img/cenicienta-home.png">
+
+
+
+            </div>
+
+            <div class="cuentohome2">
+
+                <p class="subtitulo-parrafo">"Sus hermanastras se cortaron los dedos de los pies."</p>
+
+                <p class="boton">DESCUBRIR MÁS</p>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="ventanaRegistro">
+
+        <div id="segundaPantalla" class="descubrir">
+
+            <div id="textDiv2">
+
+                <p class="titulo">CONTENIDO EXCLUSIVO</p>
+
+                <div class="subtitulo2">
+                    <img class="candado1" src="img/candado.svg">
+                    <p class="subtitulo">Estás accediendo a un contenido único para suscriptores</p>
+                </div>
+
+                <div class="espacio"></div>
+
+                <p class="titulo2-2">INICIAR SESIÓN</p>
+
+
+
+                <div class="caja-login">
+
+                    <input class="input" type="text" id="correo" name="correo" placeholder="E-MAIL">
+                    <div class="linea"></div>
+
+                    <input class="input" type="password" id="contraseña" name="contraseña" placeholder="CONTRASEÑA">
+                    <div class="linea"></div>
+
+                    <p class="input2">¿HAS OLVIDADO LA CONTRASEÑA?</p>
+
+                    <div class="caja-boton">
+
+                        <button class="boton-iniciar" id="iniciar" onclick="cuento()">INICIAR SESIÓN</button>
+                    </div>
+
+                    <div class="espacio"></div>
+
+
+
+                    <p class="titulo2-3">SUSCRIBIRME A KALOPSIA</p>
+
+                    <div class="caja-boton">
+
+                        <button class="boton-suscribirme" id="iniciar" onclick="suscribirme()">SUSCRIBIRME</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="terceraPantalla" class="descubrir">
+
+            <div class="header">
+
+                <img class="icono-header" src="img/icono-positivo.svg">
+                <img class="icono-menu" src="img/menu-10.svg">
+
+            </div>
+
+
+
+            <div id="textDiv2">
+
+                <div class="flex-start">
+
+                    <img class="atras" src="img/atras.svg">
+
+                    <p class="titulo text-center">SUSCRIBIRME A KALOPSIA</p>
+
+
+                </div>
+
+
+
+                <div class="subtitulo2">
+                    <p class="subtitulo-peque">Suscríbete a Kalopsia y podrás disfrutar de todas las versiones de cuentos
+                        jamás contados.</p>
+                </div>
+
+                <div class="espacio"></div>
+
+                <div class="subtitulo2">
+                    <img class="llave" src="img/llave.svg">
+                    <div class="caja-column">
+                        <p class="titulo">CONTENIDO EXCLUSIVO</p>
+                        <p class="parrafo">Sé un usuario VIP y obtén acceso
+                            a nuestros cuentos exclusivos.</p>
+                    </div>
+                </div>
+
+                <div class="subtitulo2">
+                    <img class="labios" src="img/labios.svg">
+                    <div class="caja-column">
+                        <p class="titulo">PUBLICACIÓN CONTINUA</p>
+                        <p class="parrafo">Disfruta cada mes de un nuevo cuento publicado durante un año.</p>
+                    </div>
+                </div>
+
+
+                <div class="caja-suscripcion">
+                    <div class="caja-column">
+                        <p class="titulo">Pago único</p>
+                        <p class="titulo4">12,99€</p>
+                        <p class="">IVA incluido</p>
+                    </div>
+
+                    <div class="caja-boton2">
+
+                        <button class="boton-suscribirme" id="iniciar" onclick="suscribirmePago()">SUSCRIBIRME</button>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+
+        <div id="cuartaPantalla" class="descubrir">
+
+            <div id="textDiv3">
+
+                <div class="flex-start">
+
+                    <img class="atras" src="img/atras.svg">
+                    <p class="titulo text-center">SUSCRIBIRME A KALOPSIA</p>
+
+                </div>
+
+                <div class="caja-imputs">
+                    <input class="input" type="text" id="correo" name="correo" placeholder="NOMBRE Y APELLIDO">
+                    <div class="linea"></div>
+
+                    <input class="input" type="text" id="correo" name="correo" placeholder="E-MAIL">
+                    <div class="linea"></div>
+
+                    <input class="input" type="password" id="contraseña" name="contraseña" placeholder="CONTRASEÑA">
+                    <div class="linea"></div>
+
+                    <input class="input" type="password" id="contraseña" name="contraseña" placeholder="REPETIR CONTRASEÑA">
+                    <div class="linea"></div>
+
+                </div>
+
+                <p class="titulo">FORMA DE PAGO</p>
+
+                <div class="paypal m-b-2">
+
+                    <div class="input-caja">
+
+                        <input style="margin-top: 1.5vh;" class="input-radio" type="radio" name="radio" id="pagopaypal">
+
+                        <div class="caja-column">
+
+                            <div class="space-between">
+
+                                <label for="hombre" class="input-texto">Pago con PayPal</label>
+
+                                <img class="tarjetas" src="img/paypal.svg">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="parrafo">Serás redirigida/o a PayPal para
+                        efectuar el pago.</p>
+
+                </div>
+
+
+
+
+                <div class="tarjeta m-b-6">
+
+                    <div class="input-caja">
+
+                        <input style="margin-top: 1.5vh;" class="input-radio" type="radio" name="radio" id="pagopaypal">
+
+                        <div class="caja-column">
+
+                            <div class="space-between">
+                                <label for="hombre" class="input-texto">Pago con Tarjeta</label>
+
+                                <img class="tarjetas" src="img/visa.svg">
+                                <img class="tarjetas" src="img/apple%20pay.svg">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <p class="parrafo">Titular de la Tarjeta</p>
+                        <input class="input-tarjeta" type="text" id="correo" name="correo" placeholder="">
+
+                        <p class="parrafo">N.° de la Tarjeta</p>
+                        <input class="input-tarjeta" type="text" id="correo" name="correo" placeholder="">
+
+                        <p class="parrafo">Validez</p>
+
+                        <div class="space-between-pequeno">
+
+                            <input class="input-tarjeta-pequeno" type="text" id="correo" name="correo" placeholder="MM/YY">
+
+                            <img class="tarjetas" src="img/tarjeta.svg">
+
+                        </div>
+
+                        <p class="parrafo">CVC</p>
+
+                        <input style="margin-top: 1vh;" class="input-tarjeta-pequeno" type="text" id="correo" name="correo" placeholder="">
+
+                    </div>
+                </div>
+
+                <p class="titulo m-b-4">SUSCRIPCIÓN ÚNICA A KALOPSIA</p>
+
+                <p class="titulo">Pago único</p>
+                <div class="linea"></div>
+
+                <div class="space-between">
+                    <p class="parrafo"><strong>TOTAL</strong> (IVA incluido)</p>
+
+                    <p class="texto-parrafo"><strong>12,99€</strong></p>
+
+                </div>
+
+                <div class="caja-boton2">
+
+                    <button class="boton-1-oscuro" id="iniciar" onclick="iniciar()">PAGAR</button>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <div id="blancanievesCuento" class="cuento">
+
+        <p class="titulo">portada cuento</p>
+
+        <div class="botones-slides">
+
+            <button class="slider-delante" id="slider-delante" onclick="slides()">slider-delante</button>
+
+            <button class="slider-atras" id="slider-atras" onclick="slidesAtras()">slider-atras</button>
+
+        </div>
+
+        <div class="contenedor">
+            <div class="slider-contenedor">
+                <section class="contenido-slider">
+                    <div>
+                        <div class="caja-titulo">
+                            <h2 id="blancanieves" class="titulo2">BLANCA NIEVES</h2>
+                        </div>
+
+                        <img id="link2" class="imghome" src="img/blancanieves.png">
+
+                        <h2>Portada</h2>
+
+
+
+                    </div>
+                    <img src="animacion.svg" alt="">
+
+                </section>
+                <section class="contenido-slider">
+                    <div>
+
+                        <div class="caja-titulo">
+                            <h2 id="blancanieves" class="titulo2">subportada</h2>
+                        </div>
+
+                        <img class="imghome2" src="img/cenicienta-home.png" id="img2">
+
+
+
+                        <h2></h2>
+                        <a href="#">Contact us</a>
+                    </div>
+                    <img src="animacion2.svg" alt="">
+
+                </section>
+
+
+                <section class="contenido-slider">
+
+                    <div class="caja-titulo">
+                        <h2 id="blancanieves" class="titulo2">slide 3</h2>
+                    </div>
+
+
+                </section>
+
+                <section class="contenido-slider">
+
+                    <div class="caja-titulo">
+                        <h2 id="blancanieves" class="titulo2">slide 4</h2>
+                    </div>
+
+
+                </section>
+
+                <section class="contenido-slider">
+
+                    <div class="caja-titulo">
+                        <h2 id="blancanieves" class="titulo2">slide 5</h2>
+                    </div>
+
+
+                </section>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="js/codi.js"></script>
+</body></html>
